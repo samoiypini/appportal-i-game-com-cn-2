@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://samoiypini.github.io/appportal-i-game-com-cn-2/sitemap.xml

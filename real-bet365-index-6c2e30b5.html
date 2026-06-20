@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bet365 知识参考 · 平台背景与信息索引</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #f2f7fc;
+      color: #1a2c3e;
+      line-height: 1.6;
+      padding: 24px 20px 60px;
+    }
+
+    .page-wrap {
+      max-width: 1240px;
+      margin: 0 auto;
+    }
+
+    /* 头部区域 */
+    .hero {
+      background: linear-gradient(145deg, #e4f0f9 0%, #d6e9f5 100%);
+      border-radius: 32px;
+      padding: 40px 32px 32px;
+      margin-bottom: 40px;
+      box-shadow: 0 8px 18px rgba(22, 89, 128, 0.06);
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+      font-weight: 550;
+      letter-spacing: -0.02em;
+      color: #0a3b4f;
+      margin-bottom: 0.25rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 8px 4px;
+    }
+
+    .hero h1 span.tag {
+      background: #2b7f8c;
+      color: white;
+      font-size: 0.9rem;
+      font-weight: 500;
+      padding: 0.2rem 1rem;
+      border-radius: 40px;
+      letter-spacing: 0.02em;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      color: #1f4a5a;
+      margin-top: 12px;
+    }
+
+    /* 目录 / 网格卡片区 */
+    .section-label {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #2b7f8c;
+      font-weight: 600;
+      margin-bottom: 16px;
+      border-left: 5px solid #2ba0b2;
+      padding-left: 14px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 24px;
+      padding: 24px 22px 24px;
+      box-shadow: 0 6px 14px rgba(25, 80, 100, 0.04);
+      transition: all 0.2s ease;
+      border: 1px solid #e1edf5;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 24px rgba(27, 94, 117, 0.12);
+      border-color: #bbdae7;
+    }
+
+    .card .emoji-icon {
+      font-size: 1.8rem;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      font-size: 1.25rem;
+      font-weight: 550;
+      color: #124e61;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #2d4c5b;
+      margin-bottom: 8px;
+    }
+
+    .card a {
+      color: #1f7e8c;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid transparent;
+      transition: border 0.15s;
+    }
+
+    .card a:hover {
+      border-bottom: 1px solid #1f7e8c;
+    }
+
+    .insight-box {
+      background: #ffffffdd;
+      backdrop-filter: blur(4px);
+      border-radius: 28px;
+      padding: 28px 32px;
+      margin: 32px 0 40px;
+      border: 1px solid #cfe1ec;
+      box-shadow: 0 4px 10px rgba(0, 30, 40, 0.02);
+    }
+
+    .insight-box .flex-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px 40px;
+      align-items: flex-start;
+    }
+
+    .insight-box .tip {
+      flex: 1 1 240px;
+    }
+
+    .insight-box .tip h4 {
+      font-size: 1rem;
+      color: #0c4e5e;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .insight-box .tip p {
+      font-size: 0.95rem;
+      color: #1e4a59;
+    }
+
+    .info-section {
+      background: white;
+      border-radius: 28px;
+      padding: 32px 28px;
+      margin-bottom: 32px;
+      border: 1px solid #d3e4ef;
+    }
+
+    .info-section h2 {
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: #144d60;
+      margin-bottom: 16px;
+    }
+
+    .info-section p {
+      margin-bottom: 14px;
+    }
+
+    .faq-mini {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin: 24px 0 16px;
+    }
+
+    .faq-item {
+      padding: 6px 0;
+    }
+
+    .faq-item strong {
+      display: block;
+      font-weight: 550;
+      color: #115267;
+      margin-bottom: 2px;
+    }
+
+    .faq-item p {
+      margin: 0;
+      color: #2a4e5c;
+    }
+
+    .link-sentence {
+      background: #dcecf5;
+      padding: 16px 22px;
+      border-radius: 80px;
+      display: inline-block;
+      margin: 20px 0 8px;
+      font-size: 1rem;
+    }
+
+    .link-sentence a {
+      color: #146573;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-weight: 500;
+    }
+
+    .footer-note {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid #c5dae7;
+      color: #3a6576;
+      font-size: 0.9rem;
+      text-align: left;
+    }
+
+    /* 响应式 */
+    @media (max-width: 640px) {
+      body {
+        padding: 16px 16px 40px;
+      }
+
+      .hero {
+        padding: 28px 20px;
+      }
+
+      .hero h1 {
+        font-size: 1.7rem;
+      }
+
+      .card-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .insight-box {
+        padding: 22px 18px;
+      }
+
+      .info-section {
+        padding: 24px 20px;
+      }
+
+      .link-sentence {
+        padding: 12px 18px;
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* 蓝绿点缀 */
+    .accent-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: #279dad;
+      border-radius: 50%;
+      margin-right: 6px;
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrap">
+  <!-- hero -->
+  <div class="hero">
+    <h1>
+      📚 关于 bet365
+      <span class="tag">背景·功能·参考</span>
+    </h1>
+    <p>一份围绕 bet365 平台的知识库索引，涵盖服务构成、使用场景与常见信息提示，帮助你更清晰地理解其运作逻辑。</p>
+  </div>
+
+  <!-- 网格卡片（目录感） -->
+  <div class="section-label"><span class="accent-dot"></span> 内容主题卡片</div>
+  <div class="card-grid">
+    <div class="card">
+      <span class="emoji-icon">🧭</span>
+      <h3>平台定位</h3>
+      <p>bet365 是综合性数字娱乐服务商，提供包括体育数据、实时互动及赛事资讯在内的多元功能模块。界面支持多语言与多终端自适应。</p>
+    </div>
+    <div class="card">
+      <span class="emoji-icon">⚙️</span>
+      <h3>功能层次</h3>
+      <p>账户体系、资金管理、通知偏好、历史记录与实时动态构成核心使用闭环。不同模块间通过统一账户串联。</p>
+    </div>
+    <div class="card">
+      <span class="emoji-icon">📱</span>
+      <h3>终端与体验</h3>
+      <p>响应式网页及专用客户端均保持类似的布局逻辑，强调信息层次清晰，关键操作可在 2 步内触达。</p>
+    </div>
+    <div class="card">
+      <span class="emoji-icon">🔐</span>
+      <h3>数据与隐私</h3>
+      <p>采用传输加密及账户验证机制，用户可自主管理个人数据授权，隐私政策与条款在注册流程中可随时查看。</p>
+    </div>
+  </div>
+
+  <!-- 说明 + 提示 混合区（insight） -->
+  <div class="insight-box">
+    <div class="flex-row">
+      <div class="tip">
+        <h4>💡 使用提醒</h4>
+        <p>开始使用前建议熟悉界面导航与设置偏好。部分服务依赖网络环境及地理位置，建议在稳定的连接下操作。</p>
+      </div>
+      <div class="tip">
+        <h4>🧩 相关功能</h4>
+        <p>直播流、统计数据、自定义提醒、多语言界面、账户历史导出。以上功能均可通过个人设定页调整。</p>
+      </div>
+      <div class="tip">
+        <h4>📌 信息索引</h4>
+        <p>常见问题覆盖注册验证、支付渠道、限额说明、账号安全、条款更新。帮助中心与实时客服均可调用。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 相关信息区 -->
+  <div class="info-section">
+    <h2>使用场景与背景说明</h2>
+    <p>bet365 的服务体系围绕体育数据与动态资讯展开，用户可根据个人兴趣订阅特定联赛、队伍或赛事通知。平台提供定制化筛选，包括实时比分、阵容变动、数据图表以及赛程日历。这种信息架构使得关注焦点高度灵活。</p>
+    <p>在账户管理方面，支持多币种结算、存取款记录明细以及安全验证升级。用户可设定日/周/月限额，也可随时调整通知触发条件。界面语言覆盖超过 20 种，包括简体中文，方便不同地区的用户使用。</p>
+
+    <div class="faq-mini">
+      <div class="faq-item">
+        <strong>❓ 注册需满足哪些条件？</strong>
+        <p>需符合当地法定年龄，并提供有效的身份及地址证明。部分地区的访问可能受法律约束，请以本地法规为准。</p>
+      </div>
+      <div class="faq-item">
+        <strong>❓ 如何修改个人资料？</strong>
+        <p>登录后在“我的账户”中可以更新联系方式、安全偏好及通知选项。修改姓名或地址一般需要提交验证文件。</p>
+      </div>
+      <div class="faq-item">
+        <strong>❓ 实时数据是否需要额外付费？</strong>
+        <p>基础比分与统计免费提供；部分深度数据或高清直播可能因授权地区而有所限制，具体以页面显示为准。</p>
+      </div>
+    </div>
+
+    <!-- 自然嵌入链接的句子，严格使用 'bet365' 作为可见文本 -->
+    <div class="link-sentence">
+      若希望直接了解 bet365 的界面与当前服务，可前往
+      <a href="https://real-bet365.com">bet365</a>
+      参考其主页结构。
+    </div>
+    <p style="margin-top: 12px; color: #2f5f6e;">🔹 以上内容仅作知识整理与背景说明，不构成任何行动建议或承诺。所有服务的具体条款以官方页面公示为准。</p>
+  </div>
+
+  <!-- 额外补充：简短知识条目 -->
+  <div style="display: flex; flex-wrap: wrap; gap: 20px; background: #eaf3f9; border-radius: 28px; padding: 22px 28px; margin: 8px 0 20px;">
+    <div style="flex: 1; min-width: 160px;">
+      <h4 style="color: #136474; font-weight: 500; font-size: 1rem; margin-bottom: 6px;">📋 功能更新动态</h4>
+      <ul style="list-style: none; padding: 0; color: #1c495a;">
+        <li style="padding: 4px 0;">• 改进的赛事筛选器</li>
+        <li style="padding: 4px 0;">• 账户安全日志增强</li>
+        <li style="padding: 4px 0;">• 自定义通知频率</li>
+      </ul>
+    </div>
+    <div style="flex: 1; min-width: 160px;">
+      <h4 style="color: #136474; font-weight: 500; font-size: 1rem; margin-bottom: 6px;">🌐 语言与地区</h4>
+      <ul style="list-style: none; padding: 0; color: #1c495a;">
+        <li style="padding: 4px 0;">• 简体中文 / English</li>
+        <li style="padding: 4px 0;">• 欧元 / 美元 / 本地币种</li>
+        <li style="padding: 4px 0;">• 时区自动适配</li>
+      </ul>
+    </div>
+    <div style="flex: 1; min-width: 160px;">
+      <h4 style="color: #136474; font-weight: 500; font-size: 1rem; margin-bottom: 6px;">🔒 安全提示</h4>
+      <ul style="list-style: none; padding: 0; color: #1c495a;">
+        <li style="padding: 4px 0;">• 启用两步验证</li>
+        <li style="padding: 4px 0;">• 定期检查登录设备</li>
+        <li style="padding: 4px 0;">• 不要分享密码</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-note">
+    <span style="background: #d4e7f1; padding: 2px 12px; border-radius: 40px; font-size: 0.8rem; color: #0f4a59;">📄 信息参考 · 知识库风格</span>
+    <p style="margin-top: 12px;">此页面为独立介绍页，与 bet365 官方无直接关联。所有引用信息基于公开资料整理，仅供学习与交流。</p>
+  </div>
+</div>
+</body>
+</html>

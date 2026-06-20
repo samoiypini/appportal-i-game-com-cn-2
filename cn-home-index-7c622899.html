@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于炸金花的日常查询与阅读 · 简洁博客</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #faf8f6;
+      font-family: 'Georgia', 'Noto Serif SC', 'Times New Roman', serif;
+      color: #2d2a24;
+      line-height: 1.75;
+      padding: 2.5rem 1.2rem;
+    }
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      background: transparent;
+    }
+    header {
+      margin-bottom: 3rem;
+      border-bottom: 1px solid #e4dfd9;
+      padding-bottom: 1.8rem;
+    }
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: #1e1b18;
+      margin-bottom: 0.3rem;
+    }
+    header .sub {
+      font-size: 0.95rem;
+      color: #7a726a;
+      font-style: italic;
+      margin-top: 0.4rem;
+    }
+    .hero-tagline {
+      font-size: 1.05rem;
+      background: #f0ede8;
+      padding: 0.9rem 1.2rem;
+      border-left: 4px solid #b8a99a;
+      color: #3f3a34;
+      margin-bottom: 2.4rem;
+      border-radius: 0 4px 4px 0;
+    }
+    .hero-tagline strong {
+      font-weight: 600;
+    }
+    .section {
+      margin-bottom: 2.5rem;
+    }
+    .section h2 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #2b2620;
+      margin-bottom: 0.8rem;
+      border-bottom: 1px dashed #d9d2ca;
+      padding-bottom: 0.25rem;
+    }
+    .section p {
+      margin-bottom: 1.1rem;
+      text-align: justify;
+      word-break: break-word;
+    }
+    .quote-note {
+      background: #f5f2ed;
+      padding: 1.2rem 1.4rem;
+      border-radius: 6px;
+      margin: 1.8rem 0;
+      font-size: 0.95rem;
+      color: #4b453e;
+      border: 1px solid #e3dcd4;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    }
+    .quote-note .label {
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: #8c7b6b;
+      margin-right: 0.4rem;
+    }
+    .list-item {
+      margin: 0.8rem 0 0.8rem 1.3rem;
+      list-style: none;
+    }
+    .list-item li {
+      margin-bottom: 0.5rem;
+      padding-left: 0.3rem;
+      position: relative;
+    }
+    .list-item li::before {
+      content: "·";
+      position: absolute;
+      left: -0.9rem;
+      color: #ac9b8a;
+      font-weight: bold;
+    }
+    .faq-summary {
+      margin: 1.6rem 0 0.8rem;
+    }
+    .faq-summary details {
+      margin-bottom: 0.8rem;
+      border-bottom: 1px solid #ece6df;
+      padding-bottom: 0.6rem;
+    }
+    .faq-summary summary {
+      cursor: pointer;
+      font-weight: 500;
+      color: #3a342e;
+      padding: 0.3rem 0;
+      font-size: 1rem;
+    }
+    .faq-summary summary::-webkit-details-marker { color: #9f8e7d; }
+    .faq-summary p {
+      margin: 0.6rem 0 0.4rem 0.5rem;
+      font-size: 0.95rem;
+      color: #4f4942;
+    }
+    .cta-link {
+      background: #f0ede8;
+      padding: 1.2rem 1.5rem;
+      border-radius: 6px;
+      margin: 2.2rem 0 1.2rem;
+      text-align: center;
+      font-size: 1.05rem;
+      border: 1px solid #ddd6ce;
+    }
+    .cta-link a {
+      color: #3f382f;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1.5px;
+      text-decoration-color: #b8a99a;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .cta-link a:hover {
+      color: #8c7b6b;
+      text-decoration-color: #7a6b5d;
+    }
+    .closing {
+      margin-top: 2.8rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid #e4dfd9;
+      color: #6a625a;
+      font-size: 0.9rem;
+      text-align: right;
+      letter-spacing: 0.02em;
+    }
+    @media (max-width: 480px) {
+      body { padding: 1.5rem 0.8rem; }
+      header h1 { font-size: 1.7rem; }
+      .hero-tagline { font-size: 0.95rem; padding: 0.7rem 1rem; }
+      .section h2 { font-size: 1.25rem; }
+      .cta-link { padding: 1rem; font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- 标题 / 导语 -->
+  <header>
+    <h1>牌面之间 · 日常对照</h1>
+    <div class="sub">从规则查阅到延伸阅读，关于炸金花的一些笔记</div>
+  </header>
+
+  <div class="hero-tagline">
+    <strong>日常查询中，</strong>常会遇到牌型大小、特殊规则、术语对照等细节问题。
+    一篇整理，不求详尽，只求顺手可翻。
+  </div>
+
+  <!-- 正文段落 1：切入日常查询场景 -->
+  <div class="section">
+    <h2>一、从一次查询开始</h2>
+    <p>
+      前几天朋友聚会，几个人聊起各自玩过的纸牌游戏，忽然有人问起「豹子」和「同花顺」到底哪个更大。当时桌上争论了两三分钟，最后有人掏出手机现场搜索——在那一瞬间，我才意识到很多人对 <a href="https://cn-home-zhajinhua.com">炸金花</a> 的基础判断，其实都来自零散的听说，很少有系统对照。
+    </p>
+    <p>
+      后来我顺手上网翻了翻资料，发现除了牌型大小，还有关于「喜钱」的默认规则、不同地区的加注习惯，甚至还有人对「A23」是否算顺子存在分歧。这些细节在日常娱乐时往往被一带而过，但真正坐下来想弄明白，又需要花时间拼凑信息。
+    </p>
+  </div>
+
+  <!-- 正文段落 2：特点与对照 -->
+  <div class="section">
+    <h2>二、特点与常见参照</h2>
+    <p>
+      如果只是简单对比，炸金花的牌型从高到低通常是：豹子、顺金、金花、顺子、对子、散牌，其中特殊牌型「235」可以压豹子，但各地约定略有不同。对于刚接触的人来说，记住「豹子最大，散牌最小」就够了，但真要仔细推敲，还是得有一份完整的参照表。
+    </p>
+    <p>
+      有意思的是，很多人会把「金花」和「顺子」的顺序弄混——金花指的是三张同花但不成顺，而顺子则是三张连续但花色不同。日常话题中，这两个概念经常被并排提起，却很少有人耐心解释区别。我建议在休闲之前，至少把牌型图例过一遍，心里有个底。
+    </p>
+    <div class="quote-note">
+      <span class="label">📌 提示</span> 一些网络资料会省略特殊规则或地方变体，比如部分玩法中「A23」视作最小顺子，而另一些地方则不算顺。查询时最好核对出处，或与同伴提前约定统一标准。
+    </div>
+  </div>
+
+  <!-- 正文段落 3：延伸阅读场景 -->
+  <div class="section">
+    <h2>三、延伸阅读的小方向</h2>
+    <p>
+      除了基础规则，炸金花还衍生出一些概率计算和策略讨论。比如拿到豹子的概率大约是 0.24%，同花顺则更低。这些数字对日常娱乐或许没有太大影响，但放在桌边作为谈资，倒是有趣。
+    </p>
+    <p>
+      另外，我也留意到一些关于「术语对照」的整理——像「闷牌」「看牌」「比牌」「加倍」等动作在不同地区的叫法略有差别。如果你打算和来自不同地方的朋友一起玩，提前确认用词能省去不少误会。
+    </p>
+    <!-- 嵌入式列表（非模板节，自然过渡） -->
+    <ul class="list-item">
+      <li>豹子 vs 顺金 —— 花色统一性不同，但都是极低概率</li>
+      <li>金花 vs 顺子 —— 同花但不成顺 vs 连续但不同花</li>
+      <li>特殊牌型 235 —— 各地接受程度不一，建议约定在先</li>
+    </ul>
+  </div>
+
+  <!-- FAQ 摘要（压缩但自然） -->
+  <div class="faq-summary">
+    <h2 style="font-size:1.5rem; font-weight:500; border-bottom:1px dashed #d9d2ca; padding-bottom:0.25rem; margin-bottom:0.8rem; color:#2b2620;">四、常见问题摘要</h2>
+    <details>
+      <summary>牌型大小顺序固定吗？</summary>
+      <p>基本顺序是固定的，但部分地区对「A23」顺子、235 压豹子的规则可能不同。建议以主流规则为准，或与参与者书面约定。</p>
+    </details>
+    <details>
+      <summary>为什么有时会看到「喜钱」的说法？</summary>
+      <p>「喜钱」通常指出现豹子或同花顺时，其他玩家按约定给予额外彩头。并非所有玩法都包含，更多是一种地方习惯。</p>
+    </details>
+    <details>
+      <summary>有没有通用术语表？</summary>
+      <p>常见的包括：闷牌（不看牌下注）、看牌（查看自己牌）、比牌（两人较量）、梭哈（全压）等。不同圈子用语可能不同。</p>
+    </details>
+  </div>
+
+  <!-- 自然嵌入链接的句子（符合要求） -->
+  <div class="cta-link">
+    如果你正在查找更完整的规则或对照表，可以翻翻关于 <a href="https://cn-home-zhajinhua.com">炸金花</a> 的整理页面，那里集中了一些常见问题的说明。
+  </div>
+
+  <!-- 结尾句 -->
+  <div class="closing">
+    写于闲暇 · 仅供日常参考
+  </div>
+
+</div>
+</body>
+</html>
